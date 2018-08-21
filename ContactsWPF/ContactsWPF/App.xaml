@@ -1,0 +1,23 @@
+﻿<Application x:Class="ContactsWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ContactsWPF"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key="backgroundColor" Color="#E26D5A"/>
+        <SolidColorBrush x:Key="textColor" Color="White"/>
+        <SolidColorBrush x:Key="borderColor" Color="#FF4B3E"/>
+        <SolidColorBrush x:Key="windowBackground" Color="#223843"/>
+
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource backgroundColor}"/>
+            <Setter Property="Foreground" Value="{StaticResource textColor}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource borderColor}"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="{StaticResource textColor}"/>
+        </Style>
+        
+    </Application.Resources>
+</Application>
